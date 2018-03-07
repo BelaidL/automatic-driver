@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="RobotSensors">
+	<inputs>
+		<Variable name="RobotPhase">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="phaseTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8LtME9HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Signalization">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="sigTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4620/7702/12D8/57ac1d3c5082"/>
+			</pragmas>
+		</Variable>
+		<Variable name="mapid">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4f6c/684D/810/57e92d286815" hidden="true"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="SensorsData">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="sensorsTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8LtMk9HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="sensorsTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/462b/7702/12D8/57ac1dad3eff"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="phaseTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4639/7702/12D8/57ac1de84359"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="sigTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/463b/7702/12D8/57ac1de817d5"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L4">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4641/7702/12D8/57ac1e0e7f98"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L5">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4647/7702/12D8/57ac1e4756f9"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L6">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/464d/7702/12D8/57ac1e762b38"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L8">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="obstArr"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5493/3648/1650/57f4c2d16130"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L7">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="trafLArr"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5492/3648/1650/57f4c2d1682a"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L1 = AgregateSensors(_L4, _L6, _L5); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<!-- AgregateSensors(_L4, _L6, _L5) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="AgregateSensors"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L4"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L6"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L5"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/462a/7702/12D8/57ac1dad29ee"/>
+			</pragmas>
+		</Equation>
+		<!-- SensorsData = _L1; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="SensorsData"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L1"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4633/7702/12D8/57ac1ddc16bd"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2 = RobotPhase; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="RobotPhase"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4638/7702/12D8/57ac1de836ec"/>
+			</pragmas>
+		</Equation>
+		<!-- _L3 = Signalization; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L3"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Signalization"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/463a/7702/12D8/57ac1de8493"/>
+			</pragmas>
+		</Equation>
+		<!-- _L4 = GroundColorDetection(_L2, mapid); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L4"/>
+			</lefts>
+			<right>
+				<!-- GroundColorDetection(_L2, mapid) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="GroundColorDetection"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="mapid"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4640/7702/12D8/57ac1e0e73ca"/>
+			</pragmas>
+		</Equation>
+		<!-- _L5 = ObstaclesDetection(_L2, _L8); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L5"/>
+			</lefts>
+			<right>
+				<!-- ObstaclesDetection(_L2, _L8) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="ObstaclesDetection"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L8"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4646/7702/12D8/57ac1e47a73"/>
+			</pragmas>
+		</Equation>
+		<!-- _L6 = TraficLightsDetection(_L2, _L7, mapid); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L6"/>
+			</lefts>
+			<right>
+				<!-- TraficLightsDetection(_L2, _L7, mapid) -->
+				<CallExpression>
+					<operator>
+						<OpCall name="1">
+							<operator>
+								<OperatorRef name="TraficLightsDetection"/>
+							</operator>
+						</OpCall>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L7"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="mapid"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/464c/7702/12D8/57ac1e7610f1"/>
+			</pragmas>
+		</Equation>
+		<!-- _L7, _L8 = (flatten sigTy)(_L3); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L7"/>
+				<VariableRef name="_L8"/>
+			</lefts>
+			<right>
+				<!-- (flatten sigTy)(_L3) -->
+				<CallExpression>
+					<operator>
+						<FlattenOp>
+							<type>
+								<TypeRef name="sigTy"/>
+							</type>
+						</FlattenOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L3"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/5491/3648/1650/57f4c2d161a"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="_h8LtM09HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+			<comment>for a given robot phase returns simulated sensors data</comment>
+			<diagrams>
+				<NetDiagram name="diagram_RobotSensors_1" landscape="false" format="A4 (210 297)" oid="_TiRusVATEeawOKPczrkP0A">
+					<presentationElements>
+						<EquationGE presentable="!ed/462a/7702/12D8/57ac1dad29ee">
+							<position>
+								<Point x="11774" y="2540"/>
+							</position>
+							<size>
+								<Size width="1781" height="1393"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4633/7702/12D8/57ac1ddc16bd">
+							<position>
+								<Point x="14684" y="2990"/>
+							</position>
+							<size>
+								<Size width="335" height="512"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4638/7702/12D8/57ac1de836ec">
+							<position>
+								<Point x="2566" y="1323"/>
+							</position>
+							<size>
+								<Size width="247" height="512"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/463a/7702/12D8/57ac1de8493">
+							<position>
+								<Point x="2566" y="5503"/>
+							</position>
+							<size>
+								<Size width="247" height="511"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4640/7702/12D8/57ac1e0e73ca">
+							<position>
+								<Point x="7488" y="926"/>
+							</position>
+							<size>
+								<Size width="3014" height="1321"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4640/7702/12D8/57ac1e0e73ca" dstEquation="!ed/462a/7702/12D8/57ac1dad29ee">
+							<positions>
+								<Point x="10504" y="1588"/>
+								<Point x="11139" y="1588"/>
+								<Point x="11139" y="2884"/>
+								<Point x="11774" y="2884"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/462a/7702/12D8/57ac1dad29ee" dstEquation="!ed/4633/7702/12D8/57ac1ddc16bd">
+							<positions>
+								<Point x="13547" y="3254"/>
+								<Point x="14129" y="3254"/>
+								<Point x="14129" y="3254"/>
+								<Point x="14737" y="3254"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/4646/7702/12D8/57ac1e47a73">
+							<position>
+								<Point x="7435" y="4366"/>
+							</position>
+							<size>
+								<Size width="2662" height="862"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4646/7702/12D8/57ac1e47a73" dstEquation="!ed/462a/7702/12D8/57ac1dad29ee">
+							<positions>
+								<Point x="10107" y="4789"/>
+								<Point x="11007" y="4789"/>
+								<Point x="11007" y="3598"/>
+								<Point x="11774" y="3598"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/464c/7702/12D8/57ac1e7610f1">
+							<position>
+								<Point x="7408" y="2593"/>
+							</position>
+							<size>
+								<Size width="2874" height="1321"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/464c/7702/12D8/57ac1e7610f1" dstEquation="!ed/462a/7702/12D8/57ac1dad29ee">
+							<positions>
+								<Point x="10292" y="3254"/>
+								<Point x="10530" y="3254"/>
+								<Point x="10530" y="3254"/>
+								<Point x="11774" y="3254"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4638/7702/12D8/57ac1de836ec" dstEquation="!ed/4640/7702/12D8/57ac1e0e73ca">
+							<positions>
+								<Point x="2805" y="1588"/>
+								<Point x="5318" y="1588"/>
+								<Point x="5318" y="1588"/>
+								<Point x="7488" y="1588"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4638/7702/12D8/57ac1de836ec" dstEquation="!ed/464c/7702/12D8/57ac1e7610f1">
+							<positions>
+								<Point x="2805" y="1588"/>
+								<Point x="3784" y="1588"/>
+								<Point x="3784" y="3043"/>
+								<Point x="7408" y="3043"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4638/7702/12D8/57ac1de836ec" dstEquation="!ed/4646/7702/12D8/57ac1e47a73">
+							<positions>
+								<Point x="2805" y="1588"/>
+								<Point x="3784" y="1588"/>
+								<Point x="3784" y="4657"/>
+								<Point x="7435" y="4657"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/5491/3648/1650/57f4c2d161a">
+							<position>
+								<Point x="4075" y="5106"/>
+							</position>
+							<size>
+								<Size width="1270" height="1270"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/463a/7702/12D8/57ac1de8493" dstEquation="!ed/5491/3648/1650/57f4c2d161a">
+							<positions>
+								<Point x="2805" y="5768"/>
+								<Point x="3440" y="5768"/>
+								<Point x="3440" y="5768"/>
+								<Point x="4075" y="5768"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/5491/3648/1650/57f4c2d161a" dstEquation="!ed/464c/7702/12D8/57ac1e7610f1">
+							<positions>
+								<Point x="5345" y="5530"/>
+								<Point x="5953" y="5530"/>
+								<Point x="5953" y="3466"/>
+								<Point x="7408" y="3466"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="2" rightExprIndex="2" srcEquation="!ed/5491/3648/1650/57f4c2d161a" dstEquation="!ed/4646/7702/12D8/57ac1e47a73">
+							<positions>
+								<Point x="5345" y="5953"/>
+								<Point x="6615" y="5953"/>
+								<Point x="6615" y="4921"/>
+								<Point x="7435" y="4921"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

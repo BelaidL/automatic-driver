@@ -1,0 +1,32 @@
+I0001: SCADE RP Simu Version 6.6.4 (build i14) (c) Esterel Technologies SAS 2010-2016 started at 2017-12-22T17:12:35.
+I0005: Command line: ScadeRPSimu.exe -probes -outdir C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code -prefix SDY2_game_ -texturemax 1024 C:\Users\blagha85\Desktop\PROJET_SCADE\RP\game.rgfx C:\Users\blagha85\Desktop\PROJET_SCADE\RP\texture_table_1.stt "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\textures\Widgets_textures.stt" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_fonts.sft" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_colors.sct" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Styles_colors.sct" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_line_width.swt" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_line_stipple.sst"
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_ColorBase.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_ColorBase.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_N_StateLED.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_N_StateLED.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_NumericDisplay.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_NumericDisplay.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_TextDisplay.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_TextDisplay.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_FrameShape.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_FrameShape.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\LED.wgfx:135: No code generated for object "control point" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_LED.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_LED.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_arena.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_arena.h.cosimu
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_arena.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_font_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_font_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_font_table1.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_texture_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_texture_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_color_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_color_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_line_stipple_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_line_stipple_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_line_width_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_line_width_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\SDY2_game_imported_functions.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY2_game\Code\ScadeRPSimu.log
+I0002: SCADE RP Simu finished with 0 error(s) at 2017-12-22T17:12:39.

@@ -1,0 +1,37 @@
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/blagha85/Desktop/PROJET_SCADE/Sync4Students/TheChallenge_KCG66/config.txt
+** Generation date: 2018-01-13T10:57:49
+*************************************************************$ */
+#ifndef _SoundEffects_H_
+#define _SoundEffects_H_
+
+#include "kcg_types.h"
+
+/* =====================  no input structure  ====================== */
+
+/* =====================  no output structure  ====================== */
+
+/* ========================  context type  ========================= */
+typedef struct {
+  /* --------------------- no memorised outputs  --------------------- */
+  /* -------------  insert eventual inits and memories  -------------- */
+} outC_SoundEffects;
+
+/* ===========  node initialization and cycle functions  =========== */
+/* SoundEffects/ */
+extern void SoundEffects(/* code/ */ kcg_int32 code, outC_SoundEffects *outC);
+
+#ifndef KCG_NO_EXTERN_CALL_TO_RESET
+extern void SoundEffects_reset(outC_SoundEffects *outC);
+#endif /* KCG_NO_EXTERN_CALL_TO_RESET */
+
+extern void SoundEffects_init(outC_SoundEffects *outC);
+
+
+
+#endif /* _SoundEffects_H_ */
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** SoundEffects.dh
+** Generation date: 2018-01-13T10:57:49
+*************************************************************$ */
+

@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="Sounds">
+			<inputs>
+				<Variable name="events">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="eventTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/5303/1CD0/7B8/585926ef7103"/>
+					</pragmas>
+				</Variable>
+				<Variable name="status">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="statusTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/5386/3804/1734/5859438532fc"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<locals>
+				<Variable name="eve">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="eventTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/5329/1CD0/7B8/5859296c6af3"/>
+					</pragmas>
+				</Variable>
+				<Variable name="wav">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/535d/1CD0/7B8/58592a5e6a6d"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="eventTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/530e/1CD0/7B8/5859271b18c4"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="eventTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/5319/1CD0/7B8/585927312af9"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L4">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/54ab/1CD0/7B8/58592c787c23"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = events; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="events"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/530d/1CD0/7B8/5859271b1acc"/>
+					</pragmas>
+				</Equation>
+				<!-- () = SoundEffects(_L4); -->
+				<Equation>
+					<right>
+						<!-- SoundEffects(_L4) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="SoundEffects"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L4"/>
+									</path>
+								</IdExpression>
+							</callParameters>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/5313/1CD0/7B8/5859271e2f95"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = Utilities::EventEdge(_L1); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<!-- Utilities::EventEdge(_L1) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="Utilities::EventEdge"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L1"/>
+									</path>
+								</IdExpression>
+							</callParameters>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/5318/1CD0/7B8/585927317360"/>
+					</pragmas>
+				</Equation>
+				<!-- eve = _L2; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="eve"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/532a/1CD0/7B8/5859296c38d8"/>
+					</pragmas>
+				</Equation>
+				<IfBlock name="IfBlock1">
+					<block>
+						<IfNode>
+							<if>
+								<!-- status = Preparing -->
+								<BinaryOp name="1" operator="=">
+									<operands>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="status"/>
+											</path>
+										</IdExpression>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Preparing"/>
+											</path>
+										</IdExpression>
+									</operands>
+								</BinaryOp>
+							</if>
+							<then>
+								<Action>
+									<locals>
+										<Variable name="_L1">
+											<type>
+												<NamedType>
+													<type>
+														<TypeRef name="int32"/>
+													</type>
+												</NamedType>
+											</type>
+											<pragmas>
+												<ed:Variable oid="!ed/5367/1CD0/7B8/58592a7863e3"/>
+											</pragmas>
+										</Variable>
+									</locals>
+									<data>
+										<!-- _L1 = -1; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="_L1"/>
+											</lefts>
+											<right>
+												<ConstValue value="-1"/>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/5366/1CD0/7B8/58592a782580"/>
+											</pragmas>
+										</Equation>
+										<!-- wav = _L1; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="wav"/>
+											</lefts>
+											<right>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="_L1"/>
+													</path>
+												</IdExpression>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/536c/1CD0/7B8/58592a7d69f5"/>
+											</pragmas>
+										</Equation>
+									</data>
+									<pragmas>
+										<ed:Action oid="!ed/533e/1CD0/7B8/585929c04d1"/>
+									</pragmas>
+								</Action>
+							</then>
+							<else>
+								<IfNode>
+									<if>
+										<!-- eve.collisionEvent -->
+										<PrjOp name="10">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="eve"/>
+													</path>
+												</IdExpression>
+											</flow>
+											<with>
+												<Label name="collisionEvent"/>
+											</with>
+										</PrjOp>
+									</if>
+									<then>
+										<Action>
+											<locals>
+												<Variable name="_L3">
+													<type>
+														<NamedType>
+															<type>
+																<TypeRef name="int32"/>
+															</type>
+														</NamedType>
+													</type>
+													<pragmas>
+														<ed:Variable oid="!ed/5405/1CD0/7B8/58592b37659e"/>
+													</pragmas>
+												</Variable>
+											</locals>
+											<data>
+												<!-- wav = _L3; -->
+												<Equation>
+													<lefts>
+														<VariableRef name="wav"/>
+													</lefts>
+													<right>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="_L3"/>
+															</path>
+														</IdExpression>
+													</right>
+													<pragmas>
+														<ed:Equation oid="!ed/53e8/1CD0/7B8/58592af4dba"/>
+													</pragmas>
+												</Equation>
+												<!-- _L3 = 0; -->
+												<Equation>
+													<lefts>
+														<VariableRef name="_L3"/>
+													</lefts>
+													<right>
+														<ConstValue value="0"/>
+													</right>
+													<pragmas>
+														<ed:Equation oid="!ed/5404/1CD0/7B8/58592b376148"/>
+													</pragmas>
+												</Equation>
+											</data>
+											<pragmas>
+												<ed:Action oid="!ed/533f/1CD0/7B8/585929c01894"/>
+											</pragmas>
+										</Action>
+									</then>
+									<else>
+										<IfNode>
+											<if>
+												<!-- eve.lightRun -->
+												<PrjOp name="9">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="eve"/>
+															</path>
+														</IdExpression>
+													</flow>
+													<with>
+														<Label name="lightRun"/>
+													</with>
+												</PrjOp>
+											</if>
+											<then>
+												<Action>
+													<locals>
+														<Variable name="_L4">
+															<type>
+																<NamedType>
+																	<type>
+																		<TypeRef name="int32"/>
+																	</type>
+																</NamedType>
+															</type>
+															<pragmas>
+																<ed:Variable oid="!ed/5413/1CD0/7B8/58592b3e6517"/>
+															</pragmas>
+														</Variable>
+													</locals>
+													<data>
+														<!-- wav = _L4; -->
+														<Equation>
+															<lefts>
+																<VariableRef name="wav"/>
+															</lefts>
+															<right>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="_L4"/>
+																	</path>
+																</IdExpression>
+															</right>
+															<pragmas>
+																<ed:Equation oid="!ed/53c4/1CD0/7B8/58592acf3abb"/>
+															</pragmas>
+														</Equation>
+														<!-- _L4 = 1; -->
+														<Equation>
+															<lefts>
+																<VariableRef name="_L4"/>
+															</lefts>
+															<right>
+																<ConstValue value="1"/>
+															</right>
+															<pragmas>
+																<ed:Equation oid="!ed/5412/1CD0/7B8/58592b3e59c1"/>
+															</pragmas>
+														</Equation>
+													</data>
+													<pragmas>
+														<ed:Action oid="!ed/534a/1CD0/7B8/585929eb5b09"/>
+													</pragmas>
+												</Action>
+											</then>
+											<else>
+												<IfNode>
+													<if>
+														<!-- eve.speedExcess -->
+														<PrjOp name="8">
+															<flow>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="eve"/>
+																	</path>
+																</IdExpression>
+															</flow>
+															<with>
+																<Label name="speedExcess"/>
+															</with>
+														</PrjOp>
+													</if>
+													<then>
+														<Action>
+															<locals>
+																<Variable name="_L3">
+																	<type>
+																		<NamedType>
+																			<type>
+																				<TypeRef name="int32"/>
+																			</type>
+																		</NamedType>
+																	</type>
+																	<pragmas>
+																		<ed:Variable oid="!ed/5417/3804/1734/5859454228a"/>
+																	</pragmas>
+																</Variable>
+															</locals>
+															<data>
+																<!-- wav = _L3; -->
+																<Equation>
+																	<lefts>
+																		<VariableRef name="wav"/>
+																	</lefts>
+																	<right>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="_L3"/>
+																			</path>
+																		</IdExpression>
+																	</right>
+																	<pragmas>
+																		<ed:Equation oid="!ed/5415/3804/1734/5859454244e"/>
+																	</pragmas>
+																</Equation>
+																<!-- _L3 = 2; -->
+																<Equation>
+																	<lefts>
+																		<VariableRef name="_L3"/>
+																	</lefts>
+																	<right>
+																		<ConstValue value="2"/>
+																	</right>
+																	<pragmas>
+																		<ed:Equation oid="!ed/5416/3804/1734/58594542415e"/>
+																	</pragmas>
+																</Equation>
+															</data>
+															<pragmas>
+																<ed:Action oid="!ed/5350/1CD0/7B8/585929f03493"/>
+															</pragmas>
+														</Action>
+													</then>
+													<else>
+														<IfNode>
+															<if>
+																<!-- eve.dirEvent -->
+																<PrjOp name="7">
+																	<flow>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="eve"/>
+																			</path>
+																		</IdExpression>
+																	</flow>
+																	<with>
+																		<Label name="dirEvent"/>
+																	</with>
+																</PrjOp>
+															</if>
+															<then>
+																<Action>
+																	<locals>
+																		<Variable name="_L3">
+																			<type>
+																				<NamedType>
+																					<type>
+																						<TypeRef name="int32"/>
+																					</type>
+																				</NamedType>
+																			</type>
+																			<pragmas>
+																				<ed:Variable oid="!ed/53ec/3804/1734/585944f92f53"/>
+																			</pragmas>
+																		</Variable>
+																	</locals>
+																	<data>
+																		<!-- _L3 = 3; -->
+																		<Equation>
+																			<lefts>
+																				<VariableRef name="_L3"/>
+																			</lefts>
+																			<right>
+																				<ConstValue value="3"/>
+																			</right>
+																			<pragmas>
+																				<ed:Equation oid="!ed/53eb/3804/1734/585944f949f7"/>
+																			</pragmas>
+																		</Equation>
+																		<!-- wav = _L3; -->
+																		<Equation>
+																			<lefts>
+																				<VariableRef name="wav"/>
+																			</lefts>
+																			<right>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="_L3"/>
+																					</path>
+																				</IdExpression>
+																			</right>
+																			<pragmas>
+																				<ed:Equation oid="!ed/53ed/3804/1734/585944f972d6"/>
+																			</pragmas>
+																		</Equation>
+																	</data>
+																	<pragmas>
+																		<ed:Action oid="!ed/5356/1CD0/7B8/585929f715be"/>
+																	</pragmas>
+																</Action>
+															</then>
+															<else>
+																<IfNode>
+																	<if>
+																		<!-- eve.exitRoad -->
+																		<PrjOp name="6">
+																			<flow>
+																				<IdExpression>
+																					<path>
+																						<ConstVarRef name="eve"/>
+																					</path>
+																				</IdExpression>
+																			</flow>
+																			<with>
+																				<Label name="exitRoad"/>
+																			</with>
+																		</PrjOp>
+																	</if>
+																	<then>
+																		<Action>
+																			<locals>
+																				<Variable name="_L3">
+																					<type>
+																						<NamedType>
+																							<type>
+																								<TypeRef name="int32"/>
+																							</type>
+																						</NamedType>
+																					</type>
+																					<pragmas>
+																						<ed:Variable oid="!ed/53da/3804/1734/585944d554ed"/>
+																					</pragmas>
+																				</Variable>
+																			</locals>
+																			<data>
+																				<!-- _L3 = 4; -->
+																				<Equation>
+																					<lefts>
+																						<VariableRef name="_L3"/>
+																					</lefts>
+																					<right>
+																						<ConstValue value="4"/>
+																					</right>
+																					<pragmas>
+																						<ed:Equation oid="!ed/53d9/3804/1734/585944d53f7c"/>
+																					</pragmas>
+																				</Equation>
+																				<!-- wav = _L3; -->
+																				<Equation>
+																					<lefts>
+																						<VariableRef name="wav"/>
+																					</lefts>
+																					<right>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="_L3"/>
+																							</path>
+																						</IdExpression>
+																					</right>
+																					<pragmas>
+																						<ed:Equation oid="!ed/53db/3804/1734/585944d5562b"/>
+																					</pragmas>
+																				</Equation>
+																			</data>
+																			<pragmas>
+																				<ed:Action oid="!ed/535c/1CD0/7B8/585929fc79e6"/>
+																			</pragmas>
+																		</Action>
+																	</then>
+																	<else>
+																		<Action>
+																			<locals>
+																				<Variable name="_L1">
+																					<type>
+																						<NamedType>
+																							<type>
+																								<TypeRef name="int32"/>
+																							</type>
+																						</NamedType>
+																					</type>
+																					<pragmas>
+																						<ed:Variable oid="!ed/53c9/3804/1734/585944cb67a5"/>
+																					</pragmas>
+																				</Variable>
+																			</locals>
+																			<data>
+																				<!-- wav = _L1; -->
+																				<Equation>
+																					<lefts>
+																						<VariableRef name="wav"/>
+																					</lefts>
+																					<right>
+																						<IdExpression>
+																							<path>
+																								<ConstVarRef name="_L1"/>
+																							</path>
+																						</IdExpression>
+																					</right>
+																					<pragmas>
+																						<ed:Equation oid="!ed/53c7/3804/1734/585944cb186d"/>
+																					</pragmas>
+																				</Equation>
+																				<!-- _L1 = -1; -->
+																				<Equation>
+																					<lefts>
+																						<VariableRef name="_L1"/>
+																					</lefts>
+																					<right>
+																						<ConstValue value="-1"/>
+																					</right>
+																					<pragmas>
+																						<ed:Equation oid="!ed/53c8/3804/1734/585944cb3ddf"/>
+																					</pragmas>
+																				</Equation>
+																			</data>
+																			<pragmas>
+																				<ed:Action oid="!ed/53af/3804/1734/585944117ef"/>
+																			</pragmas>
+																		</Action>
+																	</else>
+																	<pragmas>
+																		<ed:IfNode oid="!ed/53aa/3804/1734/5859440f6edd"/>
+																	</pragmas>
+																</IfNode>
+															</else>
+															<pragmas>
+																<ed:IfNode oid="!ed/5357/1CD0/7B8/585929fa5ca4"/>
+															</pragmas>
+														</IfNode>
+													</else>
+													<pragmas>
+														<ed:IfNode oid="!ed/5351/1CD0/7B8/585929f45f05"/>
+													</pragmas>
+												</IfNode>
+											</else>
+											<pragmas>
+												<ed:IfNode oid="!ed/534b/1CD0/7B8/585929ef355b"/>
+											</pragmas>
+										</IfNode>
+									</else>
+									<pragmas>
+										<ed:IfNode oid="!ed/5345/1CD0/7B8/585929e883b"/>
+									</pragmas>
+								</IfNode>
+							</else>
+							<pragmas>
+								<ed:IfNode oid="!ed/533d/1CD0/7B8/585929c03e87"/>
+							</pragmas>
+						</IfNode>
+					</block>
+					<pragmas>
+						<ed:IfBlock oid="!ed/5338/1CD0/7B8/585929bb4365"/>
+					</pragmas>
+				</IfBlock>
+				<!-- _L4 = wav; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="wav"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/54aa/1CD0/7B8/58592c782a7f"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/5301/1CD0/7B8/585926e02e5f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<NetDiagram name="diagram_Sounds_1" landscape="true" format="A4 (210 297)" oid="!ed/5302/1CD0/7B8/585926e0135a">
+							<comment>Plays the sound corresponding to the current event</comment>
+							<presentationElements>
+								<EquationGE presentable="!ed/530d/1CD0/7B8/5859271b1acc">
+									<position>
+										<Point x="5556" y="4154"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/5313/1CD0/7B8/5859271e2f95">
+									<position>
+										<Point x="8943" y="5874"/>
+									</position>
+									<size>
+										<Size width="2239" height="1128"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/5318/1CD0/7B8/585927317360">
+									<position>
+										<Point x="7858" y="3969"/>
+									</position>
+									<size>
+										<Size width="2556" height="889"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/530d/1CD0/7B8/5859271b1acc" dstEquation="!ed/5318/1CD0/7B8/585927317360">
+									<positions>
+										<Point x="5821" y="4419"/>
+										<Point x="7197" y="4419"/>
+										<Point x="7197" y="4419"/>
+										<Point x="7858" y="4419"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/532a/1CD0/7B8/5859296c38d8">
+									<position>
+										<Point x="11218" y="4154"/>
+									</position>
+									<size>
+										<Size width="344" height="502"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5318/1CD0/7B8/585927317360" dstEquation="!ed/532a/1CD0/7B8/5859296c38d8">
+									<positions>
+										<Point x="10425" y="4419"/>
+										<Point x="10795" y="4419"/>
+										<Point x="10795" y="4419"/>
+										<Point x="11218" y="4419"/>
+									</positions>
+								</Edge>
+								<IfBlockGE presentable="!ed/5338/1CD0/7B8/585929bb4365">
+									<position>
+										<Point x="5186" y="7752"/>
+									</position>
+									<size>
+										<Size width="5953" height="9101"/>
+									</size>
+								</IfBlockGE>
+								<ActionGE presentable="!ed/533e/1CD0/7B8/585929c04d1">
+									<position>
+										<Point x="8281" y="8440"/>
+									</position>
+									<size>
+										<Size width="2725" height="926"/>
+									</size>
+								</ActionGE>
+								<ActionGE presentable="!ed/533f/1CD0/7B8/585929c01894">
+									<position>
+										<Point x="8414" y="9525"/>
+									</position>
+									<size>
+										<Size width="2672" height="926"/>
+									</size>
+								</ActionGE>
+								<IfNodeGE labelWidth="2011" presentable="!ed/533d/1CD0/7B8/585929c03e87">
+									<position>
+										<Point x="5636" y="8520"/>
+									</position>
+								</IfNodeGE>
+								<IfNodeGE labelWidth="2037" presentable="!ed/5345/1CD0/7B8/585929e883b">
+									<position>
+										<Point x="5636" y="9604"/>
+									</position>
+								</IfNodeGE>
+								<ActionGE presentable="!ed/534a/1CD0/7B8/585929eb5b09">
+									<position>
+										<Point x="8440" y="10610"/>
+									</position>
+									<size>
+										<Size width="2646" height="926"/>
+									</size>
+								</ActionGE>
+								<IfNodeGE labelWidth="1402" presentable="!ed/534b/1CD0/7B8/585929ef355b">
+									<position>
+										<Point x="5636" y="10689"/>
+									</position>
+								</IfNodeGE>
+								<ActionGE presentable="!ed/5350/1CD0/7B8/585929f03493">
+									<position>
+										<Point x="8440" y="11695"/>
+									</position>
+									<size>
+										<Size width="2646" height="926"/>
+									</size>
+								</ActionGE>
+								<IfNodeGE labelWidth="1984" presentable="!ed/5351/1CD0/7B8/585929f45f05">
+									<position>
+										<Point x="5636" y="11774"/>
+									</position>
+								</IfNodeGE>
+								<ActionGE presentable="!ed/5356/1CD0/7B8/585929f715be">
+									<position>
+										<Point x="8440" y="12806"/>
+									</position>
+									<size>
+										<Size width="2646" height="926"/>
+									</size>
+								</ActionGE>
+								<IfNodeGE labelWidth="1429" presentable="!ed/5357/1CD0/7B8/585929fa5ca4">
+									<position>
+										<Point x="5636" y="12885"/>
+									</position>
+								</IfNodeGE>
+								<ActionGE presentable="!ed/535c/1CD0/7B8/585929fc79e6">
+									<position>
+										<Point x="8440" y="13891"/>
+									</position>
+									<size>
+										<Size width="2646" height="926"/>
+									</size>
+								</ActionGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/5366/1CD0/7B8/58592a782580">
+									<position>
+										<Point x="8837" y="8784"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/536c/1CD0/7B8/58592a7d69f5">
+									<position>
+										<Point x="9737" y="8678"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5366/1CD0/7B8/58592a782580" dstEquation="!ed/536c/1CD0/7B8/58592a7d69f5">
+									<positions>
+										<Point x="9049" y="8943"/>
+										<Point x="9604" y="8943"/>
+										<Point x="9604" y="8943"/>
+										<Point x="9737" y="8943"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/53c4/1CD0/7B8/58592acf3abb">
+									<position>
+										<Point x="10001" y="10795"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/53e8/1CD0/7B8/58592af4dba">
+									<position>
+										<Point x="9922" y="9657"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/5404/1CD0/7B8/58592b376148">
+									<position>
+										<Point x="8916" y="9763"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/5412/1CD0/7B8/58592b3e59c1">
+									<position>
+										<Point x="8916" y="10901"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5412/1CD0/7B8/58592b3e59c1" dstEquation="!ed/53c4/1CD0/7B8/58592acf3abb">
+									<positions>
+										<Point x="9128" y="11060"/>
+										<Point x="9604" y="11060"/>
+										<Point x="9604" y="11060"/>
+										<Point x="10001" y="11060"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5404/1CD0/7B8/58592b376148" dstEquation="!ed/53e8/1CD0/7B8/58592af4dba">
+									<positions>
+										<Point x="9128" y="9922"/>
+										<Point x="9472" y="9922"/>
+										<Point x="9472" y="9922"/>
+										<Point x="9922" y="9922"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/54aa/1CD0/7B8/58592c782a7f">
+									<position>
+										<Point x="5292" y="6165"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/54aa/1CD0/7B8/58592c782a7f" dstEquation="!ed/5313/1CD0/7B8/5859271e2f95">
+									<positions>
+										<Point x="5556" y="6429"/>
+										<Point x="7250" y="6429"/>
+										<Point x="7250" y="6429"/>
+										<Point x="8943" y="6429"/>
+									</positions>
+								</Edge>
+								<IfNodeGE labelWidth="1482" presentable="!ed/53aa/3804/1734/5859440f6edd">
+									<position>
+										<Point x="5636" y="13970"/>
+									</position>
+								</IfNodeGE>
+								<ActionGE presentable="!ed/53af/3804/1734/585944117ef">
+									<position>
+										<Point x="8387" y="15346"/>
+									</position>
+									<size>
+										<Size width="2698" height="1270"/>
+									</size>
+								</ActionGE>
+								<EquationGE presentable="!ed/53c7/3804/1734/585944cb186d">
+									<position>
+										<Point x="9895" y="15796"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/53c8/3804/1734/585944cb3ddf">
+									<position>
+										<Point x="8969" y="15901"/>
+									</position>
+									<size>
+										<Size width="211" height="317"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/53c8/3804/1734/585944cb3ddf" dstEquation="!ed/53c7/3804/1734/585944cb186d">
+									<positions>
+										<Point x="9181" y="16060"/>
+										<Point x="9525" y="16060"/>
+										<Point x="9525" y="16060"/>
+										<Point x="9895" y="16060"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/53d9/3804/1734/585944d53f7c">
+									<position>
+										<Point x="8996" y="14208"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/53db/3804/1734/585944d5562b">
+									<position>
+										<Point x="10001" y="14102"/>
+									</position>
+									<size>
+										<Size width="264" height="502"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/53d9/3804/1734/585944d53f7c" dstEquation="!ed/53db/3804/1734/585944d5562b">
+									<positions>
+										<Point x="9208" y="14367"/>
+										<Point x="9790" y="14367"/>
+										<Point x="9790" y="14367"/>
+										<Point x="10001" y="14367"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/53eb/3804/1734/585944f949f7">
+									<position>
+										<Point x="9049" y="13123"/>
+									</position>
+									<size>
+										<Size width="212" height="317"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/53ed/3804/1734/585944f972d6">
+									<position>
+										<Point x="9948" y="13018"/>
+									</position>
+									<size>
+										<Size width="317" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/53eb/3804/1734/585944f949f7" dstEquation="!ed/53ed/3804/1734/585944f972d6">
+									<positions>
+										<Point x="9260" y="13282"/>
+										<Point x="9710" y="13282"/>
+										<Point x="9710" y="13282"/>
+										<Point x="9948" y="13282"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/5415/3804/1734/5859454244e">
+									<position>
+										<Point x="10160" y="12065"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/5416/3804/1734/58594542415e">
+									<position>
+										<Point x="9234" y="12171"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5416/3804/1734/58594542415e" dstEquation="!ed/5415/3804/1734/5859454244e">
+									<positions>
+										<Point x="9446" y="12330"/>
+										<Point x="9790" y="12330"/>
+										<Point x="9790" y="12330"/>
+										<Point x="10160" y="12330"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

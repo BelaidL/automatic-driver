@@ -1,0 +1,273 @@
+#############################################################
+######    Begin of Makefile
+#############################################################
+
+SCADE=C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\.
+
+SHELL=cmd.exe
+
+C_FLAGS = -pedantic
+
+all: TheChallenge.exe TheChallenge.dll 
+
+win64/TheChallenge_cosim.o: TheChallenge_cosim.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "TheChallenge_cosim.c" -o "win64\TheChallenge_cosim.o"
+
+win64/TheChallenge.o: TheChallenge.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "TheChallenge.c" -o "win64\TheChallenge.o"
+
+win64/ScoringB_City.o: ScoringB_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "ScoringB_City.c" -o "win64\ScoringB_City.o"
+
+win64/Variation_Utilities.o: Variation_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Variation_Utilities.c" -o "win64\Variation_Utilities.o"
+
+win64/UpTime_Utilities.o: UpTime_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "UpTime_Utilities.c" -o "win64\UpTime_Utilities.o"
+
+win64/Sounds.o: Sounds.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Sounds.c" -o "win64\Sounds.o"
+
+win64/EventEdge_Utilities.o: EventEdge_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "EventEdge_Utilities.c" -o "win64\EventEdge_Utilities.o"
+
+win64/ScoringA_City.o: ScoringA_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "ScoringA_City.c" -o "win64\ScoringA_City.o"
+
+win64/count_down_digital_int32.o: count_down_digital_int32.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "count_down_digital_int32.c" -o "win64\count_down_digital_int32.o"
+
+win64/RisingEdge_digital.o: RisingEdge_digital.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "RisingEdge_digital.c" -o "win64\RisingEdge_digital.o"
+
+win64/WallClock_City.o: WallClock_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "WallClock_City.c" -o "win64\WallClock_City.o"
+
+win64/SmartCityControl_City.o: SmartCityControl_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "SmartCityControl_City.c" -o "win64\SmartCityControl_City.o"
+
+win64/AllObstacles_City.o: AllObstacles_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "AllObstacles_City.c" -o "win64\AllObstacles_City.o"
+
+win64/OneObstacle_City.o: OneObstacle_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "OneObstacle_City.c" -o "win64\OneObstacle_City.o"
+
+win64/TrafficLights_City.o: TrafficLights_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "TrafficLights_City.c" -o "win64\TrafficLights_City.o"
+
+win64/OneTL_City.o: OneTL_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "OneTL_City.c" -o "win64\OneTL_City.o"
+
+win64/RobotSensors_City.o: RobotSensors_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "RobotSensors_City.c" -o "win64\RobotSensors_City.o"
+
+win64/TraficLightsDetection_City.o: TraficLightsDetection_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "TraficLightsDetection_City.c" -o "win64\TraficLightsDetection_City.o"
+
+win64/EncodeColor_Utilities.o: EncodeColor_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "EncodeColor_Utilities.c" -o "win64\EncodeColor_Utilities.o"
+
+win64/ObstaclesDetection_City.o: ObstaclesDetection_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "ObstaclesDetection_City.c" -o "win64\ObstaclesDetection_City.o"
+
+win64/OneObstacleDet_City.o: OneObstacleDet_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "OneObstacleDet_City.c" -o "win64\OneObstacleDet_City.o"
+
+win64/GroundColorDetection_City.o: GroundColorDetection_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "GroundColorDetection_City.c" -o "win64\GroundColorDetection_City.o"
+
+win64/AgregateSensors_City.o: AgregateSensors_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "AgregateSensors_City.c" -o "win64\AgregateSensors_City.o"
+
+win64/EventDetection_City.o: EventDetection_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "EventDetection_City.c" -o "win64\EventDetection_City.o"
+
+win64/WrongDir_City.o: WrongDir_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "WrongDir_City.c" -o "win64\WrongDir_City.o"
+
+win64/Light_City.o: Light_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Light_City.c" -o "win64\Light_City.o"
+
+win64/Speed_City.o: Speed_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Speed_City.c" -o "win64\Speed_City.o"
+
+win64/Exit_City.o: Exit_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Exit_City.c" -o "win64\Exit_City.o"
+
+win64/ExitAux_City.o: ExitAux_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "ExitAux_City.c" -o "win64\ExitAux_City.o"
+
+win64/Collision_City.o: Collision_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Collision_City.c" -o "win64\Collision_City.o"
+
+win64/CollisionAux_City.o: CollisionAux_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "CollisionAux_City.c" -o "win64\CollisionAux_City.o"
+
+win64/AngleDist_Utilities.o: AngleDist_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "AngleDist_Utilities.c" -o "win64\AngleDist_Utilities.o"
+
+win64/HypotR_mathext_float64.o: HypotR_mathext_float64.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "HypotR_mathext_float64.c" -o "win64\HypotR_mathext_float64.o"
+
+win64/AgregateEvents_City.o: AgregateEvents_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "AgregateEvents_City.c" -o "win64\AgregateEvents_City.o"
+
+win64/IndividualRobotControl_Robot.o: IndividualRobotControl_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "IndividualRobotControl_Robot.c" -o "win64\IndividualRobotControl_Robot.o"
+
+win64/Driver_Robot.o: Driver_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Driver_Robot.c" -o "win64\Driver_Robot.o"
+
+win64/ia_Robot.o: ia_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "ia_Robot.c" -o "win64\ia_Robot.o"
+
+win64/FrontDitect_Robot.o: FrontDitect_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "FrontDitect_Robot.c" -o "win64\FrontDitect_Robot.o"
+
+win64/TurnAction_Robot.o: TurnAction_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "TurnAction_Robot.c" -o "win64\TurnAction_Robot.o"
+
+win64/afterTurn_Robot.o: afterTurn_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "afterTurn_Robot.c" -o "win64\afterTurn_Robot.o"
+
+win64/TimerT_Robot.o: TimerT_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "TimerT_Robot.c" -o "win64\TimerT_Robot.o"
+
+win64/calculTimeTurn_Robot.o: calculTimeTurn_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "calculTimeTurn_Robot.c" -o "win64\calculTimeTurn_Robot.o"
+
+win64/ColorDetect_Robot.o: ColorDetect_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "ColorDetect_Robot.c" -o "win64\ColorDetect_Robot.o"
+
+win64/FallingEdge_digital.o: FallingEdge_digital.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "FallingEdge_digital.c" -o "win64\FallingEdge_digital.o"
+
+win64/isAction_Robot.o: isAction_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "isAction_Robot.c" -o "win64\isAction_Robot.o"
+
+win64/GoAHead_Robot.o: GoAHead_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "GoAHead_Robot.c" -o "win64\GoAHead_Robot.o"
+
+win64/StopAction_Robot.o: StopAction_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "StopAction_Robot.c" -o "win64\StopAction_Robot.o"
+
+win64/Turn_Robot.o: Turn_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Turn_Robot.c" -o "win64\Turn_Robot.o"
+
+win64/GoAction_Robot.o: GoAction_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "GoAction_Robot.c" -o "win64\GoAction_Robot.o"
+
+win64/vitesseInterval_Robot.o: vitesseInterval_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "vitesseInterval_Robot.c" -o "win64\vitesseInterval_Robot.o"
+
+win64/ErrorCalculate_Robot.o: ErrorCalculate_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "ErrorCalculate_Robot.c" -o "win64\ErrorCalculate_Robot.o"
+
+win64/PID_Robot.o: PID_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "PID_Robot.c" -o "win64\PID_Robot.o"
+
+win64/DerivatOp_Robot.o: DerivatOp_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "DerivatOp_Robot.c" -o "win64\DerivatOp_Robot.o"
+
+win64/IntegralOp_Robot.o: IntegralOp_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "IntegralOp_Robot.c" -o "win64\IntegralOp_Robot.o"
+
+win64/PhysicalModel_Robot.o: PhysicalModel_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "PhysicalModel_Robot.c" -o "win64\PhysicalModel_Robot.o"
+
+win64/Bound_Utilities.o: Bound_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Bound_Utilities.c" -o "win64\Bound_Utilities.o"
+
+win64/Normalize_Utilities.o: Normalize_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Normalize_Utilities.c" -o "win64\Normalize_Utilities.o"
+
+win64/RoundFloor_math_float64.o: RoundFloor_math_float64.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "RoundFloor_math_float64.c" -o "win64\RoundFloor_math_float64.o"
+
+win64/Integrator_Utilities.o: Integrator_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Integrator_Utilities.c" -o "win64\Integrator_Utilities.o"
+
+win64/CarGeometry_Robot.o: CarGeometry_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "CarGeometry_Robot.c" -o "win64\CarGeometry_Robot.o"
+
+win64/vec2pos_Utilities.o: vec2pos_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "vec2pos_Utilities.c" -o "win64\vec2pos_Utilities.o"
+
+win64/pos2vec_Utilities.o: pos2vec_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "pos2vec_Utilities.c" -o "win64\pos2vec_Utilities.o"
+
+win64/VectAdd_vect_float64_2.o: VectAdd_vect_float64_2.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "VectAdd_vect_float64_2.c" -o "win64\VectAdd_vect_float64_2.o"
+
+win64/MatVectProd_vect_float64_2_2.o: MatVectProd_vect_float64_2_2.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "MatVectProd_vect_float64_2_2.c" -o "win64\MatVectProd_vect_float64_2_2.o"
+
+win64/RotMatrix_Utilities.o: RotMatrix_Utilities.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "RotMatrix_Utilities.c" -o "win64\RotMatrix_Utilities.o"
+
+win64/kcg_types.o: kcg_types.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_types.c" -o "win64\kcg_types.o"
+
+win64/kcg_consts.o: kcg_consts.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_consts.c" -o "win64\kcg_consts.o"
+
+win64/EiDD_Challenge_SW_type.o: EiDD_Challenge_SW_type.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "EiDD_Challenge_SW_type.c" -o "win64\EiDD_Challenge_SW_type.o"
+
+win64/SmuPredefConv.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuPredefConv.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuPredefConv.c" -o "win64\SmuPredefConv.o"
+
+win64/SmuTypes.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuTypes.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuTypes.c" -o "win64\SmuTypes.o"
+
+win64/SmuLib.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuLib.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuLib.c" -o "win64\SmuLib.o"
+
+win64/SmuVTable.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuVTable.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuVTable.c" -o "win64\SmuVTable.o"
+
+win64/EiDD_Challenge_SW_mapping.o: EiDD_Challenge_SW_mapping.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "EiDD_Challenge_SW_mapping.c" -o "win64\EiDD_Challenge_SW_mapping.o"
+
+win64/MapADT_City.o: ../MapADT_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "..\MapADT_City.c" -o "win64\MapADT_City.o"
+
+win64/readIti_Robot.o: ../readIti_Robot.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "..\readIti_Robot.c" -o "win64\readIti_Robot.o"
+
+win64/readObstacles_City.o: ../readObstacles_City.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "..\readObstacles_City.c" -o "win64\readObstacles_City.o"
+
+win64/SoundEffects.o: ../SoundEffects.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "..\SoundEffects.c" -o "win64\SoundEffects.o"
+
+win64/EiDD_Challenge_SW_interface.o: EiDD_Challenge_SW_interface.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "EiDD_Challenge_SW_interface.c" -o "win64\EiDD_Challenge_SW_interface.o"
+
+win64/SmuProxy.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuProxy.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuProxy.c" -o "win64\SmuProxy.o"
+
+TheChallenge.dll: win64/TheChallenge_cosim.o win64/TheChallenge.o win64/ScoringB_City.o win64/Variation_Utilities.o win64/UpTime_Utilities.o win64/Sounds.o win64/EventEdge_Utilities.o win64/ScoringA_City.o win64/count_down_digital_int32.o win64/RisingEdge_digital.o win64/WallClock_City.o win64/SmartCityControl_City.o win64/AllObstacles_City.o win64/OneObstacle_City.o win64/TrafficLights_City.o win64/OneTL_City.o win64/RobotSensors_City.o win64/TraficLightsDetection_City.o win64/EncodeColor_Utilities.o win64/ObstaclesDetection_City.o win64/OneObstacleDet_City.o win64/GroundColorDetection_City.o win64/AgregateSensors_City.o win64/EventDetection_City.o win64/WrongDir_City.o win64/Light_City.o win64/Speed_City.o win64/Exit_City.o win64/ExitAux_City.o win64/Collision_City.o win64/CollisionAux_City.o win64/AngleDist_Utilities.o win64/HypotR_mathext_float64.o win64/AgregateEvents_City.o win64/IndividualRobotControl_Robot.o win64/Driver_Robot.o win64/ia_Robot.o win64/FrontDitect_Robot.o win64/TurnAction_Robot.o win64/afterTurn_Robot.o win64/TimerT_Robot.o win64/calculTimeTurn_Robot.o win64/ColorDetect_Robot.o win64/FallingEdge_digital.o win64/isAction_Robot.o win64/GoAHead_Robot.o win64/StopAction_Robot.o win64/Turn_Robot.o win64/GoAction_Robot.o win64/vitesseInterval_Robot.o win64/ErrorCalculate_Robot.o win64/PID_Robot.o win64/DerivatOp_Robot.o win64/IntegralOp_Robot.o win64/PhysicalModel_Robot.o win64/Bound_Utilities.o win64/Normalize_Utilities.o win64/RoundFloor_math_float64.o win64/Integrator_Utilities.o win64/CarGeometry_Robot.o win64/vec2pos_Utilities.o win64/pos2vec_Utilities.o win64/VectAdd_vect_float64_2.o win64/MatVectProd_vect_float64_2_2.o win64/RotMatrix_Utilities.o win64/kcg_types.o win64/kcg_consts.o win64/EiDD_Challenge_SW_type.o win64/SmuPredefConv.o win64/SmuTypes.o win64/SmuLib.o win64/SmuVTable.o win64/EiDD_Challenge_SW_mapping.o win64/MapADT_City.o win64/readIti_Robot.o win64/readObstacles_City.o win64/SoundEffects.o win64/EiDD_Challenge_SW_interface.o win64/SmuProxy.o SmuExport.def SDY1_specification.a 
+	gcc -mwindows -mwin32 -shared -static-libgcc  "@Makefile_TheChallenge_objects.txt" -Wl,--output-def,"SmuExport.def" -l winmm -lm -lwsock32 -m64 -o "TheChallenge.dll" 
+
+SmuExport.def: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuExport.def
+	copy "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuExport.def" "SmuExport.def"
+
+win64/EiDD_Challenge_SW_dll.o: EiDD_Challenge_SW_dll.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "EiDD_Challenge_SW_dll.c" -o "win64\EiDD_Challenge_SW_dll.o"
+
+win64/SmuMainWindows.o: C:/Program\ Files/ANSYS\ Inc/v180/SCADE/SCADE/lib/C/SmuMainWindows.c
+	gcc -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" -I".." -I"$(SCADE)\libraries\SC65\libmathext" $(C_FLAGS) -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE\lib\C\SmuMainWindows.c" -o "win64\SmuMainWindows.o"
+
+TheChallenge.exe: win64/EiDD_Challenge_SW_dll.o win64/SmuMainWindows.o 
+	gcc "win64\EiDD_Challenge_SW_dll.o" "win64\SmuMainWindows.o" -l winmm -lm -lwsock32 -m64 -o "TheChallenge.exe" 
+
+SDY1_specification.a: SDY1_specification.h
+
+
+TheChallenge_cosim.c: SDY1_specification.h
+
+
+#############################################################
+######    End of Makefile
+#############################################################

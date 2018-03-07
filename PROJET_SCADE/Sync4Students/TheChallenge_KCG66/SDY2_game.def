@@ -1,0 +1,8 @@
+EXPORTS
+    SDY2_game_L_arena @1
+    SDY2_game__cancelled @2
+    SDY2_game__draw @3
+    SDY2_game__init @4
+    SDY2_game__lockio @5
+    SDY2_game__refreshCallback @6
+    SDY2_game__unlockio @7

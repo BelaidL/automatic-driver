@@ -1,0 +1,87 @@
+I0001: SCADE RP Simu Version 6.6.4 (build i14) (c) Esterel Technologies SAS 2010-2016 started at 2018-01-13T10:58:22.
+I0005: Command line: ScadeRPSimu.exe -probes -outdir C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code -prefix SDY1_specification_ -texturemax 1024 C:\Users\blagha85\Desktop\PROJET_SCADE\RP\specification.rgfx C:\Users\blagha85\Desktop\PROJET_SCADE\RP\texture_table_1.stt "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\textures\Widgets_textures.stt" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_fonts.sft" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_colors.sct" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Styles_colors.sct" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_line_width.swt" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Widgets_line_stipple.sst" "C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\InfiniteKnob.wgfx"
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_ColorBase.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_ColorBase.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_N_StateLED.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_N_StateLED.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Init.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Init.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_IndividualFocus.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_IndividualFocus.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\KeyEvent.wgfx:91: No code generated for object "EmitCondition" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\KeyEvent.wgfx:356: No code generated for object "debug" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_KeyEvent.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_KeyEvent.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_FrameShape.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_FrameShape.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\ClippedLabel.wgfx:109: No code generated for object "control point" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_ClippedLabel.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_ClippedLabel.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\PushButton.wgfx:190: No code generated for object "EmitCondition" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_PushButton.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_PushButton.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Scale_element.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Scale_element.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Scale.wgfx:147: No code generated for object "control" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Scale.wgfx:472: No code generated for object "control" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Scale.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Scale.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Graduation_element.wgfx:197: No code generated for object "line" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Graduation_element.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Graduation_element.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\GaugeHorizontal.wgfx:182: No code generated for object "DisplayGraduation" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_GaugeHorizontal.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_GaugeHorizontal.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\GaugeVertical.wgfx:183: No code generated for object "DisplayGraduation" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_GaugeVertical.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_GaugeVertical.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Gauge.wgfx:165: No code generated for object "control" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Gauge.wgfx:235: No code generated for object "DisplayGraduation" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Gauge.wgfx:420: No code generated for object "Style" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Gauge.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Gauge.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_NumericDisplay.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_NumericDisplay.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_SliderThumb.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_SliderThumb.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Slider.wgfx:231: No code generated for object "Style" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Slider.wgfx:582: No code generated for object "Alignment" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Slider.wgfx:815: No code generated for object "ShowGraduations" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Slider.wgfx:1048: No code generated for object "Control" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Slider.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Slider.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\Common\Highlight.wgfx:83: No code generated for object "control" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Highlight.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Highlight.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Cursor.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_Cursor.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\NumericEditBox.wgfx:250: No code generated for object "control" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\NumericEditBox.wgfx:320: No code generated for object "Style" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\NumericEditBox.wgfx:457: No code generated for object "LegendPosition" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\NumericEditBox.wgfx:610: No code generated for object "DisplaySign" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_NumericEditBox.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_NumericEditBox.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\LED.wgfx:135: No code generated for object "control point" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_LED.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_LED.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_control_panel.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_control_panel.h.cosimu
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_control_panel.c
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\InfiniteKnob.wgfx:230: No code generated for object "control" statically invisible or inactive.
+I0013: C:\Program Files\ANSYS Inc\v180\SCADE\SCADE Test\Rapid Prototyper\Widgets\InfiniteKnob.wgfx:299: No code generated for object "style" statically invisible or inactive.
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_InfiniteKnob.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_InfiniteKnob.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_font_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_font_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_font_table1.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_texture_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_texture_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_color_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_color_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_line_stipple_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_line_stipple_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_line_width_table.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_line_width_table.c
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\SDY1_specification_imported_functions.h
+I0006: Generated file: C:\Users\blagha85\Desktop\PROJET_SCADE\Sync4Students\TheChallenge_KCG66\SDY1_specification\Code\ScadeRPSimu.log
+I0002: SCADE RP Simu finished with 0 error(s) at 2018-01-13T10:58:28.

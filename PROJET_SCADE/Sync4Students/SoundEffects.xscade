@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" external="imported" name="SoundEffects">
+			<inputs>
+				<Variable name="code">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/530f/7646/2E8/58591bb6401e"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<pragmas>
+				<ed:Operator oid="!ed/5317/24D6/E04/58583248118c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>Imported C operator for sound effects, using a very old Windows library to play a wave file (asynchronously, without blocking the system)</comment>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

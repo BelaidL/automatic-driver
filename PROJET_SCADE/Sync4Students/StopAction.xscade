@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="StopAction">
+	<inputs>
+		<Variable name="Speed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/6410/6549/1044/5a3c79482cd9"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="wheelsSpd">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="wheelsTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/640f/6549/1044/5a3c794814ec"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="wheelsTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/640d/6549/1044/5a3c79483655"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/640e/6549/1044/5a3c79484d2"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- wheelsSpd = _L2; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="wheelsSpd"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L2"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/6409/6549/1044/5a3c79483e14"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2 = (make wheelsTy)(_L1, _L1); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<!-- (make wheelsTy)(_L1, _L1) -->
+				<CallExpression>
+					<operator>
+						<MakeOp name="1">
+							<type>
+								<TypeRef name="wheelsTy"/>
+							</type>
+						</MakeOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/640a/6549/1044/5a3c79483027"/>
+			</pragmas>
+		</Equation>
+		<!-- _L1 = Speed; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Speed"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/640b/6549/1044/5a3c794849fb"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/6408/6549/1044/5a3c794832ec" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+			<diagrams>
+				<NetDiagram name="StopAction_1" landscape="true" format="A4 (210 297)" oid="!ed/640c/6549/1044/5a3c79486c43">
+					<presentationElements>
+						<EquationGE presentable="!ed/6409/6549/1044/5a3c79483e14">
+							<position>
+								<Point x="11880" y="3731"/>
+							</position>
+							<size>
+								<Size width="318" height="502"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/640a/6549/1044/5a3c79483027">
+							<position>
+								<Point x="7064" y="3360"/>
+							</position>
+							<size>
+								<Size width="1270" height="1270"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/640a/6549/1044/5a3c79483027" dstEquation="!ed/6409/6549/1044/5a3c79483e14">
+							<positions>
+								<Point x="8334" y="3995"/>
+								<Point x="10213" y="3995"/>
+								<Point x="10213" y="3995"/>
+								<Point x="11933" y="3995"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/640b/6549/1044/5a3c794849fb">
+							<position>
+								<Point x="4128" y="3731"/>
+							</position>
+							<size>
+								<Size width="264" height="502"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/640b/6549/1044/5a3c794849fb" dstEquation="!ed/640a/6549/1044/5a3c79483027">
+							<positions>
+								<Point x="4392" y="3995"/>
+								<Point x="5715" y="3995"/>
+								<Point x="5715" y="3784"/>
+								<Point x="7064" y="3784"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/640b/6549/1044/5a3c794849fb" dstEquation="!ed/640a/6549/1044/5a3c79483027">
+							<positions>
+								<Point x="4392" y="3995"/>
+								<Point x="5715" y="3995"/>
+								<Point x="5715" y="4207"/>
+								<Point x="7064" y="4207"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" external="imported" name="SoundFX">
+			<inputs>
+				<Variable name="num">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/530f/14E0/A04/5857e32f73d3"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<pragmas>
+				<ed:Operator oid="!ed/530e/14E0/A04/5857e2d129ff"/>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

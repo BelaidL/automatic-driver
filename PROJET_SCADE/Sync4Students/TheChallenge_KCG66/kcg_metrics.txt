@@ -1,0 +1,29 @@
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/blagha85/Desktop/PROJET_SCADE/Sync4Students/TheChallenge_KCG66/config.txt
+** Generation date: 2018-01-13T10:57:49
+*************************************************************$
+Data structures
+  Structures
+    Max members in a single structure: 94
+  Arrays
+    Max number of dimensions for an array: 2
+    Maximum size for a dimension: 255
+  Enumeration
+    Max of enum constants in a single enumeration: 17
+Control structures
+  Max numbers of case labels in a switch: 8
+  Max number of nesting levels in compound statement: 6
+Program size
+  Functions
+    Max number of function parameters in definition: 6
+    Max number of function arguments in a call: 6
+  Expressions
+    Max number of nesting levels of parenthesized expression in a full expression: 4
+  Identifiers
+    Max number of identifiers with block scope declared in one block: 85
+    Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 154
+    Max number of extern identifiers in one translation unit: 234
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** kcg_metrics.txt
+** Generation date: 2018-01-13T10:57:49
+*************************************************************$
