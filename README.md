@@ -1,3 +1,3 @@
 # Authors
-	* Belaid LAGHA
-	* Tiziri GUELLAL
+* Belaid LAGHA
+* Tiziri GUELLAL
