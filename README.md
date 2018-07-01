@@ -10,6 +10,8 @@ city map provided (documentationScade/movies/*.mp4).
 
 The code is documented and the documentation extracted using the SCADE reporte is provided in file "documentationScade/report.htm" (and "documentationScade/SynCContest_img"). The following notes highlight some specific parts of this documentation. 
 
+![alt text](https://raw.githubusercontent.com/BelaidL/automatic-driver/documentationScade/images/Untitled.png)
+
 ## SCADE Code
 __Robot__:​ The parameters of the robot and of roads are declared as SCADE constants. 
 1. B: distance between wheels
